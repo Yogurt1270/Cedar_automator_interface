@@ -1,1 +1,4 @@
 import MySQLdb
+
+
+class TestMySQL:

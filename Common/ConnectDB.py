@@ -1,4 +1,5 @@
-import MySQLdb
+import pymysql
+config={
 
-
-class TestMySQL:
+}
+conn = pymysql.connect(config)

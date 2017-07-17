@@ -1,7 +1,7 @@
 #!/usr/local/bin/python env
 # coding:utf-8
+
 import requests
-import json
 
 
 class CedarRequest:
@@ -22,20 +22,30 @@ class CedarRequest:
         "validatecode": "1234",
         "xgToken": "191e35f7e0731cc5080"
     }
-    mysession = requests.Session()
-    myrequest = mysession.post(url, data=para, verify=False)
 
+    def setup(self):
+        print("------test start------")
+        self.req = requests.post(CedarRequest.url, data=CedarRequest.para, verify=False)
+        return req
 
-# 获取token
-def test_gettoken():
-    print(CedarRequest.myrequest.headers['login'])
-    return CedarRequest.myrequest.headers['login']
+    def teardown(self):
+        print("------test end------")
 
+        # 获取token
 
-def test_getsesseion():
-    print(CedarRequest.mysession.cookies)
-    return CedarRequest.mysession
+    def gettoken(self):
+        print(CedarRequest.headers['login'])
+        return CedarRequest.headers['login']
+        # 获取JSESSIONID
 
+#
+# def getjsessionid(self):
+#     # print(type(CedarRequest.myrequest.cookies))
+#     aa = requests.utils.dict_from_cookiejar(CedarRequest.myrequest.cookies)
+#     # print(aa['JSESSIONID'])
+#     return aa['JSESSIONID']
 
-test_gettoken()
-test_getsesseion()
+#
+# def getsesseion():
+#     print(CedarRequest.mysession.cookies)
+#     return CedarRequest.mysession

@@ -1,0 +1,9 @@
+{
+  "test_listHomeAndPublicRepairByPage.py::TestMyOrderList::()::test_evaluationlist": true,
+  "test_myOrderList.py::TestMyOrderList::()::test_appointmentorderlist": true,
+  "test_myOrderList.py::TestMyOrderList::()::test_homerepair_oderlist_processing": true,
+  "test_myOrderList.py::TestMyOrderList::()::test_homerepair_oderlist_repaircompleted": true,
+  "test_myOrderList.py::TestMyOrderList::()::test_publicrepair_oderlist_process": true,
+  "test_myOrderList.py::TestMyOrderList::()::test_publicrepair_oderlist_waitcheck": true,
+  "test_myOrderList.py::TestMyOrderList::()::test_publicrepair_oderlist_waitfor": true
+}

@@ -48,6 +48,6 @@ class TestUploadPhoto:
             "system": "iOS",
             "userName": "测试LD哈哈"
         }
-        req = requests.post(url=url, data=mypara, verify=False)
+        req = requests.post(url, data=mypara, verify=False)
         res = json.loads(req.text)
         print(res)

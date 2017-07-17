@@ -51,7 +51,7 @@ class TestMyOrderList:
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
         print(res)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表室内报修，全部
@@ -74,7 +74,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表室内报修，待受理
@@ -97,7 +97,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表室内报修，处理中
@@ -120,7 +120,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表室内报修，维修完成
@@ -143,7 +143,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表室内报修，订单完成
@@ -166,7 +166,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表公区报修
@@ -189,7 +189,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表公区报修, 待受理
@@ -212,7 +212,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表公区报修, 处理中
@@ -235,7 +235,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表公区报修, 待验收
@@ -258,7 +258,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表公区报修, 订单完成
@@ -304,7 +304,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     #
     # 获取订单列表送件订单
@@ -327,7 +327,7 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'
 
     # 获取订单列表寄件订单
     def test_sendorderlist(self):
@@ -349,4 +349,4 @@ class TestMyOrderList:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        assert res['recordList']
+        assert 'recordList'

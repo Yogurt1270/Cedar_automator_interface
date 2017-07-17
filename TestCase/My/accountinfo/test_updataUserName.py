@@ -5,7 +5,7 @@ import requests
 import json
 
 
-class TestUpdateName():
+class TestUpdateName:
     def test_CheckNumWithAuth(self):
         url = "https://functest.junhuahomes.com/imapi/user/checkNum"
         para = {

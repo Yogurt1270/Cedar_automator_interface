@@ -52,4 +52,4 @@ class TestMyOrderList:
         req = requests.post(url=url, data=para, verify=False)
         res = json.loads(req.text)
         print(res)
-        assert res['recordList']
+        assert 'recordList'

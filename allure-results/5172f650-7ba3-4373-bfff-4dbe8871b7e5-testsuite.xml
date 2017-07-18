@@ -1,0 +1,324 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1499911524765" stop="1499911524765">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_InvitationCode</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_InvitationCode' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/My/InvitationCode/test_InvitationCode.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/My/InvitationCode/test_InvitationCode.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_updataUserName</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/accountinfo/test_updataUserName.py", line 1
+E       url=https://functest.junhuahomes.com/imapi/user/updataUserName
+E                ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_uploadUserPhoto</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_uploadUserPhoto' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/My/accountinfo/test_uploadUserPhoto.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/My/accountinfo/test_uploadUserPhoto.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_userCenter</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_userCenter' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/My/accountinfo/test_userCenter.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/My/accountinfo/test_userCenter.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_getAllCity</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/addHouse/test_getAllCity.py", line 3
+E       Imei	be7faff4f79baaf9ad62db1cd26053eccd184674
+E           	                                       ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_getCommunity</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/addHouse/test_getCommunity.py", line 3
+E       Imei	be7faff4f79baaf9ad62db1cd26053eccd184674
+E           	                                       ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_listOwnerByHouseId</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/addHouse/test_listOwnerByHouseId.py", line 3
+E       Imei	be7faff4f79baaf9ad62db1cd26053eccd184674
+E           	                                       ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_listPageByParentId</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/addHouse/test_listPageByParentId.py", line 3
+E       Imei	be7faff4f79baaf9ad62db1cd26053eccd184674
+E           	                                       ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_refreshUserIdentity</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/addHouse/test_refreshUserIdentity.py", line 3
+E       Imei	be7faff4f79baaf9ad62db1cd26053eccd184674
+E           	                                       ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_setIndentity</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/addHouse/test_setIndentity.py", line 3
+E       Imei	be7faff4f79baaf9ad62db1cd26053eccd184674
+E           	                                       ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_listHouseByPhone</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_listHouseByPhone' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/My/myHouse/myHouseList/test_listHouseByPhone.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/myHouseList/test_listHouseByPhone.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_setDefaultHouse</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_setDefaultHouse' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/My/myHouse/myHouseList/test_setDefaultHouse.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/My/myHouse/myHouseList/test_setDefaultHouse.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_logout</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>ImportError while importing test module '/Users/Shared/PyCharm_home/CHD_interface/TestCase/My/setting/test_logout.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/My/setting/test_logout.py:4: in &lt;module&gt;
+    ???
+E   ImportError: No module named 'Common'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_GetDetailByOrderId</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_GetDetailByOrderId' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/Order/test_GetDetailByOrderId.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/Order/test_GetDetailByOrderId.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_commitOrder</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_commitOrder' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/payfee/test_commitOrder.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/payfee/test_commitOrder.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_getGroupHistoryBill</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_getGroupHistoryBill' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/payfee/test_getGroupHistoryBill.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/payfee/test_getGroupHistoryBill.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_getSuccessPageVO</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_getSuccessPageVO' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/payfee/test_getSuccessPageVO.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/payfee/test_getSuccessPageVO.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_getUnpaidBill</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_getUnpaidBill' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/payfee/test_getUnpaidBill.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/payfee/test_getUnpaidBill.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_orderPaymentdo</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>import file mismatch:
+imported module 'test_orderPaymentdo' has this __file__ attribute:
+  /Users/lidong/Documents/PyCharm_home/CedarHD/TestCase/payfee/test_orderPaymentdo.py
+which is not the same as the test file we want to collect:
+  /Users/Shared/PyCharm_home/CHD_interface/TestCase/payfee/test_orderPaymentdo.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1499911524765" status="broken" stop="1499911524765">
+      <name>test_toSuccessPage</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:408: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/py/_path/local.py:662: in pyimport
+    __import__(modname)
+E     File "/Users/Shared/PyCharm_home/CHD_interface/TestCase/payfee/test_toSuccessPage.py", line 3
+E       https://functest.junhuahomes.com/imapi/app/pay/toSuccessPage
+E            ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

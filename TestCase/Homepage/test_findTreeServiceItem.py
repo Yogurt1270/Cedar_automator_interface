@@ -3,11 +3,8 @@
 
 import requests
 import json
-import allure
-
 
 class TestFindTreeServiceItem:
-    @allure.Step({0})
     def gettoken(self):
         url = "https://functest.junhuahomes.com/imapi/user/checkNum"
         para = {
@@ -33,7 +30,6 @@ class TestFindTreeServiceItem:
         return token
 
     # 根据houseID和communityId获取
-    @allure.Step({1})
     def test_displayhomepage(self):
         url = "https://functest.junhuahomes.com/gtw/provider/findTreeServiceItem"
         para = {

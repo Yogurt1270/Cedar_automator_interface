@@ -1,0 +1,17 @@
+{
+  "TestCase/Login/test_checkIOSVersion.py::test_oldVersio": true,
+  "TestCase/Login/test_checkNum.py::test_login": true,
+  "TestCase/Login/test_checkNum.py::test_login_001": true,
+  "TestCase/Login/test_sendCheckSms.py::TestSendsms::()::test_sendsms": true,
+  "TestCase/My/Feedback/test_feedback.py::TestFeedback::()::test_openfeedback": true,
+  "TestCase/My/accountinfo/test_updataUserName.py::TestUpdateName::()::test_updatName": true,
+  "TestCase/My/accountinfo/test_uploadUserPhoto.py::TestUploadPhoto::()::test_updateuserpic": true,
+  "TestCase/My/myHouse/myHouseList/test_setDefaultHouse.py::TestSetDefaultHouse::()::test_setdefoulthouse": true,
+  "TestCase/Order/test_listHomeAndPublicRepairByPage.py::TestMyOrderList::()::test_evaluationlist": true,
+  "TestCase/Order/test_myOrderList.py::TestMyOrderList::()::test_appointmentorderlist": true,
+  "TestCase/Order/test_myOrderList.py::TestMyOrderList::()::test_homerepair_oderlist_processing": true,
+  "TestCase/Order/test_myOrderList.py::TestMyOrderList::()::test_homerepair_oderlist_repaircompleted": true,
+  "TestCase/Order/test_myOrderList.py::TestMyOrderList::()::test_publicrepair_oderlist_process": true,
+  "TestCase/Order/test_myOrderList.py::TestMyOrderList::()::test_publicrepair_oderlist_waitcheck": true,
+  "TestCase/Order/test_myOrderList.py::TestMyOrderList::()::test_publicrepair_oderlist_waitfor": true
+}

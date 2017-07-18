@@ -3,9 +3,11 @@
 
 import requests
 import json
+import allure
 
 
 class TestFindTreeServiceItem:
+    @allure.Step({0})
     def gettoken(self):
         url = "https://functest.junhuahomes.com/imapi/user/checkNum"
         para = {
@@ -26,11 +28,12 @@ class TestFindTreeServiceItem:
         }
         request = requests.post(url, data=para, verify=False)
         res = json.loads(request.text)
-        print(res)
+        # print(res)
         token = request.headers['login']
         return token
 
     # 根据houseID和communityId获取
+    @allure.Step({1})
     def test_displayhomepage(self):
         url = "https://functest.junhuahomes.com/gtw/provider/findTreeServiceItem"
         para = {
@@ -39,7 +42,7 @@ class TestFindTreeServiceItem:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['data'][0]['layoutType'] == 'BIG_BANNER'
 
     # houseId为空时
@@ -51,7 +54,7 @@ class TestFindTreeServiceItem:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['data'][0]['layoutType'] == 'BIG_BANNER'
 
     # communityId为空
@@ -63,7 +66,7 @@ class TestFindTreeServiceItem:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['message'] == '小区ID不能为空!'
 
     # 参数异常时
@@ -75,5 +78,5 @@ class TestFindTreeServiceItem:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['message'] == '小区不存在!'

@@ -27,7 +27,7 @@ class TestGoHomePage:
         request = requests.post(url, data=para, verify=False)
         res = json.loads(request.text)
         token = request.headers['login']
-        print(res)
+        # print(res)
         return token
 
     # 根据houseID获取
@@ -69,7 +69,7 @@ class TestGoHomePage:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['message'] == '小区不存在！'
 
     def test_communityidisnull(self):
@@ -89,7 +89,7 @@ class TestGoHomePage:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['message'] == '该小区还没有服务中心！'
 
     def test_communityidiserror(self):
@@ -109,5 +109,5 @@ class TestGoHomePage:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['message'] == '该小区还没有服务中心！'

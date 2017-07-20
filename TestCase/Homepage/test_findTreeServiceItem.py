@@ -38,7 +38,7 @@ class TestFindTreeServiceItem:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        # print(res)
+        print(res)
         assert res['data'][0]['layoutType'] == 'BIG_BANNER'
 
     # houseId为空时
@@ -76,3 +76,14 @@ class TestFindTreeServiceItem:
         res = json.loads(req.text)
         # print(res)
         assert res['message'] == '小区不存在!'
+
+    # 缺少参数时
+    def test_paranone(self):
+        url = "https://functest.junhuahomes.com/gtw/provider/findTreeServiceItem?communityId=107069"
+        para = {
+            "houseId": ""
+        }
+        req = requests.post(url, data=para, verify=False)
+        res = json.loads(req.text)
+        print(res)
+        assert res['message'] == '服务列表为空!'

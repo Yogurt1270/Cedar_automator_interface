@@ -38,7 +38,7 @@ class TestFindTreeServiceItem:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['data'][0]['layoutType'] == 'BIG_BANNER'
 
     # houseId为空时
@@ -85,5 +85,5 @@ class TestFindTreeServiceItem:
         }
         req = requests.post(url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
+        # print(res)
         assert res['message'] == '服务列表为空!'

@@ -58,10 +58,10 @@ def test_newVersion():
     assert res['message'] == "已经是最新版本", "新版本更新失败"
 
 
-def test_oldVersio():
-    res = json.loads(setup().text)
-    # print(res)
-    assert res['updatePlan'] == "PROMPT_UPDATE", "新版本更新失败"
+# def test_oldVersio():
+#     res = json.loads(setup().text)
+#     print(res)
+#     assert res['updatePlan'] == "PROMPT_UPDATE", "新版本更新失败"
 
 
 if cv.para['currentVer'] == "3.0.0":

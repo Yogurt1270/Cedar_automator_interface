@@ -15,7 +15,7 @@ class CheckNum:
         "currentVer": "3.0.0",
         "dscd": "",
         "Login": "",
-        "mobile": "15901293186",
+        "mobile": "13718591270",
         "phoneName": "iPhone",
         "platform": "ios",
         "platformVersion": "10.3.2",
@@ -47,4 +47,5 @@ def test_login():
 # 使用"未认证"手机号登录APP
 def test_login_001():
     res = json.loads(setup().text)
-    assert res['communityId']
+    print(res)
+    assert res['userPhone']

@@ -30,15 +30,15 @@ class TestFeedback:
         # self.assertIsNotNone(res['userPhone'], "用户手机号不能为空")
         return token
 
-    # 打开意见反馈页
-    def test_openfeedback(self):
-        url = "https://functest.junhuahomes.com/imapi/h5/index.html"
-        para = {
-            "_time": "1499323842752",
-            "version": "3.0.0",
-            "login": self.test_CheckNumWithAuth(),
-            "communityId": "22206"
-        }
-        req = requests.get(url, data=para, verify=False)
-        res = json.loads(req.text)
-        print(res)
+        # # 打开意见反馈页
+        # def test_openfeedback(self):
+        #     url = "https://functest.junhuahomes.com/imapi/h5/index.html"
+        #     para = {
+        #         "time": "1499323842752",
+        #         "version": "3.0.0",
+        #         "login": self.test_CheckNumWithAuth(),
+        #         "communityId": "22206"
+        #     }
+        #     req = requests.get(url, data=para, verify=False)
+        #     res = json.loads(req.content)
+        #     print(res)

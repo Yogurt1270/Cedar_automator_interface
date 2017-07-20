@@ -6,7 +6,7 @@ import json
 
 
 class TestGetDetailByOrderId:
-    def test_CheckNumWithAuth(self):
+    def gettoken(self):
         url = "https://functest.junhuahomes.com/imapi/user/checkNum"
         para = {
             "Imei": "be7faff4f79baaf9ad62db1cd26053eccd184674",
@@ -33,9 +33,10 @@ class TestGetDetailByOrderId:
     def test_oderdetail(self):
         url = "https://functest.junhuahomes.com/imapi/homeRepair/getDetailByOrderId"
         para = {
-            "login": self.test_CheckNumWithAuth(),
+            "login": self.gettoken(),
             "orderId": "741824fa4b3549f3bfa05ffd86b75e1c"
         }
         req = requests.post(url=url, data=para, verify=False)
         res = json.loads(req.text)
+        # print(res)
         assert res['orderId']

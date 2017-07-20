@@ -8,7 +8,7 @@ import requests
 
 class TestMyOrderList:
     # 获取待评价列表
-    def test_CheckNumWithAuth(self):
+    def gettoken(self):
         url = "https://functest.junhuahomes.com/imapi/user/checkNum"
         para = {
             "Imei": "be7faff4f79baaf9ad62db1cd26053eccd184674",
@@ -31,6 +31,7 @@ class TestMyOrderList:
         token = request.headers['login']
         return token
 
+    # 获取待评价订单列表
     def test_evaluationlist(self):
         url = "https://functest.junhuahomes.com/imapi/homeRepair/listHomeAndPublicRepairByPage"
         para = {
@@ -41,7 +42,7 @@ class TestMyOrderList:
             "isComment": "0",
             "numPerPage": "15",
             "pageNum": "1",
-            "login": self.test_CheckNumWithAuth(),
+            "login": self.gettoken(),
             "phoneName": "iPhone",
             "platform": "ios",
             "repairType": "",
@@ -51,5 +52,5 @@ class TestMyOrderList:
         }
         req = requests.post(url=url, data=para, verify=False)
         res = json.loads(req.text)
-        print(res)
-        assert 'recordList'
+        # print(res)
+        assert res['numPerPage'] == 15
